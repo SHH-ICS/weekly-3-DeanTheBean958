@@ -10,10 +10,58 @@
   </head>
 
   <body>
-  
-    <form name="myForm" action="handler.php" method="POST">
+    <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Order A Pizza</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content"><br />
+        
+        <!-- Your content goes here -->
+
+
+        <center>
+
+          <form name="myForm" action="handler.php" method="POST">
           
-    </form>
+            <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+              <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                  <span class="mdl-layout-title">Order A Pizza</span>
+                  <div class="mdl-layout-spacer"></div>
+                </div>
+              </header>
+              <main class="mdl-layout__content">
+                <div class="page-content"><br />
+          
+                  <!-- Textfield with Floating Label -->
+                  <form action="handler.php" method="POST">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                      <input class="mdl-textfield__input" type="letter" id="sample3" name="size">
+                      <label class="mdl-textfield__label" for="sample3">Size</label>
+                    </div>
+                  
+                    <br />
+                  
+                    <!-- Colored raised button -->
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" type="submit">
+                      Calculate
+                    </button>
+
+          </form>
+
+        </center>
+
+
+      </div>
+    </main>
+  </div>
 
   </body>
 </html>
